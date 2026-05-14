@@ -3,68 +3,228 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PureGlow Soap</title>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+  <title>PureGlow Soap Store</title>
 
-    body {
-      font-family: Arial, sans-serif;
-      background: #fffdf8;
-      color: #333;
-      line-height: 1.6;
-    }
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    /* NAVBAR */
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
 
-    nav {
-      background: white;
-      padding: 1rem 8%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-    .logo {
-      font-size: 1.8rem;
-      font-weight: bold;
-      color: #2d6a4f;
-    }
+<body>
 
-    nav ul {
-      display: flex;
-      list-style: none;
-      gap: 2rem;
-    }
+  <!-- ================= NAVBAR ================= -->
 
-    nav a {
-      text-decoration: none;
-      color: #333;
-      font-weight: 600;
-      transition: 0.3s;
-    }
+  <nav>
 
-    nav a:hover {
-      color: #2d6a4f;
-    }
+    <div class="logo">
+      PureGlow
+    </div>
 
-    /* HERO */
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
 
-    .hero {
-      min-height: 90vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 4rem 8%;
-      background:
-        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-        url("https://images.unsplash.com/photo-1607006483225-4f58c4b3f4f2?q=80
+  </nav>
+
+  <!-- ================= HERO ================= -->
+
+  <section class="hero" id="home">
+
+    <div class="hero-content">
+
+      <h1>
+        Handmade Natural Soap
+      </h1>
+
+      <p>
+        Luxury organic soaps made with natural oils,
+        herbs, and skin-loving ingredients.
+      </p>
+
+      <a href="#products" class="btn">
+        Shop Now
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- ================= PRODUCTS ================= -->
+
+  <section class="products" id="products">
+
+    <h2 class="section-title">
+      Our Best Sellers
+    </h2>
+
+    <div class="product-grid">
+
+      <!-- Product 1 -->
+
+      <div class="product-card">
+
+        <img
+          src="https://images.unsplash.com/photo-1607006483225-4f58c4b3f4f2?q=80&w=1200&auto=format&fit=crop"
+          alt="Lavender Soap"
+        >
+
+        <div class="product-info">
+
+          <h3>Lavender Bliss</h3>
+
+          <p>
+            Relaxing lavender soap infused with shea butter
+            and essential oils.
+          </p>
+
+          <div class="price">
+            $8.99
+          </div>
+
+          <button class="buy-btn">
+            Buy Now
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- Product 2 -->
+
+      <div class="product-card">
+
+        <img
+          src="https://images.unsplash.com/photo-1584305574647-acf8069a3d46?q=80&w=1200&auto=format&fit=crop"
+          alt="Mint Soap"
+        >
+
+        <div class="product-info">
+
+          <h3>Mint Fresh</h3>
+
+          <p>
+            Refreshing peppermint soap that leaves your skin
+            cool and clean.
+          </p>
+
+          <div class="price">
+            $7.99
+          </div>
+
+          <button class="buy-btn">
+            Buy Now
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- Product 3 -->
+
+      <div class="product-card">
+
+        <img
+          src="https://images.unsplash.com/photo-1611078489935-0cb964de46d6?q=80&w=1200&auto=format&fit=crop"
+          alt="Honey Oatmeal Soap"
+        >
+
+        <div class="product-info">
+
+          <h3>Honey Oatmeal</h3>
+
+          <p>
+            Soft exfoliating soap perfect for sensitive skin
+            and daily care.
+          </p>
+
+          <div class="price">
+            $9.99
+          </div>
+
+          <button class="buy-btn">
+            Buy Now
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+
+  <section class="about" id="about">
+
+    <h2 class="section-title">
+      Why Choose PureGlow?
+    </h2>
+
+    <p>
+      Every soap bar is handcrafted using premium natural
+      ingredients with no harsh chemicals. Our products are
+      cruelty-free, eco-friendly, and designed to nourish
+      your skin naturally.
+    </p>
+
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+
+  <section class="contact" id="contact">
+
+    <h2 class="section-title">
+      Contact Us
+    </h2>
+
+    <form>
+
+      <input
+        type="text"
+        placeholder="Your Name"
+        required
+      >
+
+      <input
+        type="email"
+        placeholder="Your Email"
+        required
+      >
+
+      <textarea
+        placeholder="Your Message"
+      ></textarea>
+
+      <button type="submit" class="btn">
+        Send Message
+      </button>
+
+    </form>
+
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer>
+
+    <p>
+      © 2026 PureGlow Soap Store. All rights reserved.
+    </p>
+
+  </footer>
+
+</body>
+</html>
